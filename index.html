@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png"/>
+    <title>The Bob Doran Museum of Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg" alt="The Bob Doran Museum of Computing" class="logo">
+            <h1>The Bob Doran Museum of Computing</h1>
+        </header>
+
+        <div class="tab">
+            <a class="tablink" onclick="openTab(event, 'Home')" id="defaultOpen">🏠 Home</a>
+            <a class="tablink" onclick="openTab(event, 'News')">📰 News</a>
+            <a class="tablink" onclick="openTab(event, 'Displays')">💻 Displays</a>
+            <a class="tablink" onclick="openTab(event, 'Guest Book')" id="gbRefresh">📖 Guest Book</a>
+        </div>
+        
+        <div id="Home" class="tabcontent">
+            <p>Welcome to The Bob Doran Museum of Computing. You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the school and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.</p>
+        </div>
+        
+        <div id="News" class="tabcontent">
+        </div>
+        
+        <div id="Displays" class="tabcontent">
+            <form action="" class="search">
+                <input class="search" type="text" placeholder="🔍 Search.." oninput="refreshSearch(event, this.value)">
+            </form>
+        </div>
+        
+        <div id="Guest Book" class="tabcontent">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
